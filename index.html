@@ -19,11 +19,16 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{
-  <video class="bg-video" autoplay muted loop playsinline>
-  <source src="makoto suki bg.mp4" type="video/mp4">
+ background:var(--midnight);color:var(--ice);font-family:var(--body);line-height:1.6;overflow-x:hidden;
+  background-image:
+    repeating-linear-gradient(-60deg,transparent 0 46px,rgba(59,232,255,.035) 46px 48px),
+    radial-gradient(ellipse at 80% -10%,rgba(13,58,156,.7),transparent 60%);
+  background-attachment:fixed;
+}
+<video class="bg-video" autoplay muted loop playsinline>
+  <source src="makoto suki.mp4" type="video/mp4">
 </video>
 <div class="bg-overlay"></div>
-}
 a{color:inherit}
 :focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
 h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:.02em;line-height:1}
